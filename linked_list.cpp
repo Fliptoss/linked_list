@@ -118,6 +118,7 @@ void addafter(Node *head, int num, int num2)
    while(p!=NULL)
    {
      if(p->data==num2){
+       //num2 is the number after which we want to insert 
          temp = new Node;
          temp->data=num;
          temp->next=p->next;
@@ -132,6 +133,7 @@ void addafter(Node *head, int num, int num2)
 Node *addbefore(Node *head, int num, int num2)
 {
   Node *temp, *p;
+   //num2 is the number we want to enter our number before that number
   if(head->data==num2)
   {
      temp = new Node;
